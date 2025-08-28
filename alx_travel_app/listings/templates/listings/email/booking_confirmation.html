@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Booking Confirmation</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+        .header { background-color: #f8f9fa; padding: 20px; text-align: center; }
+        .content { padding: 20px; background-color: #fff; }
+        .footer { padding: 20px; text-align: center; color: #666; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ALX Travel App</h1>
+        </div>
+        
+        <div class="content">
+            <h2>Booking Confirmation</h2>
+            <p>Dear {{ user_name }},</p>
+            <p>Your booking has been confirmed successfully!</p>
+            
+            <h3>Booking Details:</h3>
+            <p><strong>Property:</strong> {{ listing_title }}</p>
+            <p><strong>Check-in:</strong> {{ check_in }}</p>
+            <p><strong>Check-out:</strong> {{ check_out }}</p>
+            <p><strong>Total Price:</strong> ${{ total_price }}</p>
+            <p><strong>Booking ID:</strong> {{ booking_id }}</p>
+            
+            <p>Thank you for choosing ALX Travel App!</p>
+        </div>
+        
+        <div class="footer">
+            <p>This is an automated message. Please do not reply to this email.</p>
+            <p>&copy; 2024 ALX Travel App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
